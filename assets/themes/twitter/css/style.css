@@ -1,4 +1,161 @@
+body {
+	background: url('../images/lcf-skyline-web.jpg') center 0px fixed no-repeat;
+	background-size: 100%;
+	xpadding-top: 60px;
+}
+
+*, input, button, select, textarea {
+		font-family: 'Gotham SSm A', 'Gotham SSm B', helvetica;
+}
+
+figure {
+	margin: 30px 0;
+}
+
+.terry {
+text-transform: uppercase;
+color: #333366;
+font-weight: 800;
+margin-bottom: 0;	
+}
+
+#screen {
+	background: rgba(51, 51, 102, .5);
+	position: fixed;
+	height: 200%;
+	width: 100%;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	padding-bottom: 100px;
+	margin-bottom: -100px;
+	display: block;
+}
+
+.splash .content {
+	margin-top: 30px;
+	padding: 20px;
+	padding-bottom: 78px;
+	border: 0;
+}
+
+.splash {
+	margin: 30px 0;
+}
+
+#center-logo {
+padding: 10px;
+}
+
+.content {
+	background: rgba(255, 255, 255, .8);
+	border-top: 3px solid #fff;
+}
+
+.porthole {
+	Xborder-radius: 100%;
+	border: 1px solid #fff;
+	Xbox-shadow: 1px 1px 2px #666;	
+}
+
+.grand {
+	font-family: 'Gotham SSm A', 'Gotham SSm B';
+	font-weight: 200;
+	font-style: normal;
+	color: #333366;
+	margin-top: 0px;
+	margin-bottom: 0;
+	
+}
+
+#signup {
+	margin-top: 15px;
+}
+
+#signup ul {
+	list-style: none;
+	margin-left: 0;
+	display: inline;
+}
+
+#signup #email1 {
+	padding: 19px;
+	height: 16px;
+	box-shadow: none;
+	font-size: 20px;
+	width: 315px;
+	border: 1px solid #333366;
+	border-radius: 0;
+}
+
+
+#signup #submit {
+	padding: 18px 25px;
+	font-size: 20px;
+	background: #333366;
+	border: none;
+	color: #fff;
+}
+
+#signup li {
+	float: left;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: 800;
+	font-family: Gotham;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.content h3 {
+	color: #333366;
+}
+
+.content ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+.content ul strong {
+	display: block;
+}
+
+.content ul small {
+	text-transform: uppercase;
+	line-height: 80%;
+}
+
+.landing {
+	top: -200px;
+}
+
+.navbar-fixed-top {
+	transition: top 1s ease;
+}
+
+.navbar a.brand {
+	text-indent: -1000px;
+	background: url('../images/terry-mark-web-small.png') center center no-repeat;
+	background-size: 100%;
+	display: block;
+	height: 50px;
+	width: 210px;
+	margin-left: 0;
+}
+
+
+.navbar-inner {
+	background: rgba(255, 255, 255, .9);
+	border: none;
+}
+
 /* Custom container */
+
+
+
 .container-narrow {
   margin: 0 auto;
   max-width: 700px; }

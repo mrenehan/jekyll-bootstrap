@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6369092/690544/css/fonts.css" />
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+	<div id="screen"></div>
+    <div class="navbar navbar-fixed-top landing">
+      <div class="navbar-inner">
+        <div class="container">
+			<div class="row">
+				<div class="columns span12">
+          			<a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+	          		<ul class="nav">
+
+			         </ul>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+	<div class="splash">
+
+		<div class="container">
+			<div class="row">
+				<div class="columns span10 offset1">
+					<figure class="row">
+						<div class="columns span3">
+							<img class="porthole" src="{{ ASSET_PATH }}/images/terry-walker-headshot.jpg">
+						</div>
+						<figcaption class="columns span7">
+							<div class="grand-wrapper">
+							<img style="max-width: 100%" src="{{ ASSET_PATH }}/images/terry_mark_left_100_nobar.png">
+							<div class="content">
+							<h2 class="grand">Integrity & Progress for La&nbsp;Cañada&nbsp;Flintridge</h2>
+							<h3>Vote Terry Walker for City Council on March 3rd</h3>
+							<form id="signup" action="#">
+								<ul>
+									<li>
+										<input type="text" name="email" id="email1" placeholder="@ Your Email Address">
+									</li>
+									<li>
+										<input id="submit" value="Get Updates" type="submit">
+									</li>
+								</ul>
+							</form>
+							</div>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+   <div class="content">
+    <div class="container">
+	  <div class="row">
+	        <div class="columns span4">
+				<h3>Honorary Co-Chairs</h3>
+				<ul>
+				<li><strong>Laura Olhasso</strong>
+				<small>Current City Councilwoman, former Mayor of La Cañada Flintridge</small></li>
+				<li><strong>Pat Anderson</strong>
+				<small>Current President & CEO of the La Cañada Flintridge Chamber of Commerce and Community Association</small></li>
+				<li><strong>Steve Del Guercio</strong>
+				<small>Past City Councilman and Mayor of La Cañada Flintridge</small></li>
+				</ul>
+			</div>
+			<div class="columns span4">
+				<h3>Campaign Committee</h3>
+				<ul>
+					<li><strong>Wes Seastrom</strong>
+					<small>Campaign Manager</small></li>
+					<li><strong>John Landrum</strong>
+					<small>Treasurer</small></li>
+					<li><strong>Caroline Craven</strong>
+					<small>Social Media Coordinator</small></li>
+					<li><strong>Deborah Weirick</strong>
+					<small>Public Relations and School Board Liaison</small></li>
+					<li><strong>Kay Linden</strong></li>
+					<li><strong>Rick Gunter</strong></li>
+					<li><strong>Woody Walker</strong></li>
+				</ul>
+			</div>
+			<div class="columns span4">
+				<h3>Events</h3>
+				<ul>
+					<li>
+						<p>John Doe</p>
+					</li>
+				</ul>
+			</div>
+	      </div>
+		</div>
+      <hr>
+      <footer>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script>
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if (window.scrollY > 100) {
+						$(".navbar-fixed-top").removeClass("landing");
+					}
+					else {
+						$(".navbar-fixed-top").addClass("landing");
+					}
+				})
+			});
+        </script>
+      </footer>
+
+    </div>
+
+    {% include JB/analytics %}
+  </body>
+</html>
